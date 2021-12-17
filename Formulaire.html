@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulaire d'inscription</h1>
+    <form>
+        <h2>Formulaire</h2>
+        <div class="Genre">
+            <label for="girl">Femme</label>
+            <input type="radio" name="user_name" id="girl">
+            <label for="boy">Homme</label>
+            <input type="radio" name="user_name" id="boy">
+        </div>
+        <div class="Information">
+            <label for="birthday">Date de naissance</label>
+            <input type="date" name="birthday" id="birthday"
+                    min="2021-01-01" max="2021-12-31" required><br>
+            <label for="phone">Numéro de téléphone :</label>
+            <input type="tel" name="phone" id="phone"
+                    pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}"
+                    required>
+            <small>Format : 00.00.00.00.00</small><br>
+            <label for="email">Entrer votre email :</label>
+            <input type="email" name="mail" id="email"
+                    pattern=".+@gmail\.com" size="30" required>
+            <small>Format : Exemple@gmail.com</small><br>
+            <label for="msg">Message :</label><br>
+            <textarea name="Message" id="msg" cols="30" rows="10" placeholder="Entrer votre message ici"></textarea><br><br>
+            <input type="submit" value="Envoyer le formulaire">
+        </div>
+    </form>
+</body>
+</html>

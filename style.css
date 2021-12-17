@@ -1,0 +1,18 @@
+body{
+    background: url(/assets/20672_800x480.jpg);
+    background-size: cover;
+    background-position: 75% 25%;
+}
+form{
+    background: rgba(0, 0, 255, 0.048);
+	border: 2px solid black;
+	padding: 250px;
+	margin-top: 150px;
+	border-radius: 100px;
+	color: whitesmoke;
+    position: relative;
+}
+h1{
+    text-align: center;
+    color: white;
+}
